@@ -2,27 +2,37 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Névnapkereső</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="doboz">
-        <h1>Névnapkereső</h1>
+<div class="container">
 
-        <label>Dátum:</label>
+    <section class="kereso-doboz">
+        <h1>Névnapkereső</h1>
+        <p>Keress dátum vagy keresztnév alapján.</p>
+
+        <label for="nap">Dátum:</label>
         <input type="text" id="nap" placeholder="pl. 4-30">
 
-        <label>Név:</label>
+        <label for="nev">Keresztnév:</label>
         <input type="text" id="nev" placeholder="pl. Katalin">
 
         <button onclick="kereses()">Keresés</button>
+        <button onclick="torles()">Törlés</button>
+    </section>
 
+    <section class="eredmeny-doboz">
+        <h2>Eredmény</h2>
         <div id="eredmeny">
-            Itt jelenik meg az eredmény.
+            Itt jelenik meg a keresés eredménye.
         </div>
-    </div>
+    </section>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
